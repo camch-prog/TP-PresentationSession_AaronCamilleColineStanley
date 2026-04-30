@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- section Header -->
+    <header>
+        <h1>Session Dev 2026</h1>
+        <nav> 
+            <a href="#">Session</a>
+            <a href="#">Equipe</a>
+            <a href="#">Video</a>
+            <a href="#">Formulaire</a>
+        </nav>
+    </header>
+    <!-- section Hero -->
+    <div class="hero" id="hautDePage">
+        <div class="container" >
+            <div class="hero-fss">
+                <h2>Notre session</h2>
+                <h3>FULL STACK SQUAD</h3>
+                <div class="titlefss">
+                    <img src="./photos/Full_Stack_Squad.png" alt="Full Stack Squad">
+                </div>
+            </div>
+            <div class="hero-timeline">
+                <h2>TIMELINE</h2>
+                <p>
+                    La session a commencé le <strong>24 Février 2026</strong> et se termine le <strong>11 Décembre 2026</strong>
+                </p>
+                <p>Le stage commence 2 mois avant la fin de la formation, le <strong>28 Septembre et prend fin le 20 Novembre</strong></p>
+                <img src="./photos/timeline.png" alt="Timeline">
+            </div>
+        </div>
+    </div>
+    <!-- section Equipe -->
+    <section class="boxcontainer">
+        <h2>Notre équipe</h2>
+        <div class="team-grid">
+            <div class="team-card" id="Aaron">
+                <div class="img-contener">
+                    <img class="team-card-img" src="./photos/Aaron.png" alt="Aaron">
+                    <img class="team-card-img-bis" src="./photos/Aaron-hover.jpg" alt="Aaron-hover">
+                </div>
+                <h3>Aaron</h3>
+                <p><strong>Age : </strong>26 ans 
+                </p>
+            </div>
+            <div class="team-card" id="Camille">
+                <div class="img-contener">
+                    <img class="team-card-img" src="./photos/Camille.png" alt="Camille">
+                    <img class="team-card-img-bis"  src="./photos/Camille-hover.jpg" alt="Camille-hover">
+                </div>
+                <h3>Camille</h3>
+                <p><strong>Age : </strong>30 ans 
+                </p>
+            </div>
+            <div class="team-card" id="Coline">
+                <div class="img-contener">
+                    <img class="team-card-img" src="./photos/Coline.png" alt="Coline">
+                    <img class="team-card-img-bis" src="./photos/Coline-hover.jpg" alt="Coline-hover">
+                </div>
+                <h3>Coline</h3>
+                <p><strong>Age : </strong>29 ans
+                </p>
+            </div>
+            <div class="team-card" id="Stanley">
+                <div class="img-contener">
+                    <img class="team-card-img" src="./photos/Stanley.png" alt="Stanley">
+                    <img class="team-card-img-bis" src="./photos/Stanley-hover.jpg" alt="Stanley-hover">
+                </div>
+                <h3>Stanley</h3>
+                <p><strong>Age : </strong>25 ans 
+                </p>
+            </div>
+        </div>
+        <p><em>Survolez l'image pour voir l'Animal Totem de chaque membre !</Em></p>
+    </section>
+    <!-- section Formulaire -->
+    <form action="#" method="POST" class="boxcontainer">
+        <h2>Nous contacter</h2>
+        <div class="formulairecard">
+        <fieldset>
+            <legend>Vos informations</legend>
+            <label for="nom">Nom</label>
+            <input type="text" placeholder="Ex Dubois" name="nom" minlength="2" id="nom">
+            <label for="prenom" >Prénom</label>
+            <input type="text" name="prenom" id="prenom" placeholder="Ex Mirelle" minlength="2">
+            <label for="email">Email</label>
+            <input type="email" placeholder="monmail@mail.com" name="email" id="email" minlength="2">
+            <label for="tel">Numéro</label>
+            <input type="tel" placeholder="Ex 00 11 22 33 44" name="numero" id="tel" maxlength="10">
+        </fieldset>
+        <fieldset>
+            <legend>Votre demande</legend>
+            <label for="liste">Objet de la demande</label>
+            <select name="liste" id="liste">
+                <option value="rdv">Obtenir un rendez-vous</option>
+                <option value="info" selected>Demander des informations</option>
+                <option value="rejoindre">Rejoindre la formation</option>
+            </select>
+            <p>Qui voulez-vous contacter ?</p>
+            <div class="sectionradio">
+                <div class="boutonradio">
+                <input type="radio" name="personne" id="coline" value="coline" checked><label for="coline">Coline</label>
+                </div>
+                <div class="boutonradio">
+                    <input type="radio" name="personne" id="camille" value="camille"><label for="camille">Camille</label>
+                </div>
+                <div class="boutonradio">
+                    <input type="radio" name="personne" id="aaron" value="aaron"><label for="aaron">Aaron</label>
+                </div>
+                <div class="boutonradio">
+                    <input type="radio" name="personne" id="stanley" value="stanley"><label for="stanley">Stanley</label>
+                </div>
+            </div>
+            <label for="message">Ajoutez un message</label>
+            <textarea cols="20" rows="10" placeholder="Ecrivez votre message ici" name="message" id="message"></textarea>
+        </fieldset>
+        </div>
+        </div>
+        <div class="boutons">
+            <button type="submit" value="Envoyer"> Envoyer </button>
+            <button type="reset" value="reset"> Reset </button>
+        </div>
+    </form>
+</body>
+</html>
