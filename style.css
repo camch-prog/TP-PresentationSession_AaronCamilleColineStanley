@@ -320,10 +320,7 @@ button:hover{
     }}
 
     @media (max-width: 576px) {
-    header {
-        padding: 1rem;
-    }
-
+    
     nav {
         flex-direction: column;
         gap: 0.8rem;
